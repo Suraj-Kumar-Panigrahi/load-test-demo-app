@@ -1,0 +1,22 @@
+displayName: demo-load-test
+testPlan: quick_test.jmx
+description: Test the load for deployed web app
+engineInstances: 1
+testId: 17063731-b17a-4f0b-b939-09f83710a955
+testType: JMX
+splitAllCSVs: False
+failureCriteria: []
+env:
+- name: domain
+  value: az-lt-demo-app.azurewebsites.net
+- name: protocol
+  value: https
+- name: threads_per_engine
+  value: 30
+- name: ramp_up_time
+  value: 60
+- name: duration_in_sec
+  value: 60
+autoStop:
+  errorPercentage: 90
+  timeWindow: 60
