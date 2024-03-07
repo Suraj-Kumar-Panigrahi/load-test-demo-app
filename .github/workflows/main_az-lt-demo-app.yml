@@ -73,7 +73,7 @@ jobs:
           loadTestResource: lt-demo-app
           resourceGroup: rg-load-test-demo
       - name: Test Summary
-        uses: actions/uploas-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: loadTestResults
           path: ${{ github.workspace }}/loadTest
