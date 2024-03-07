@@ -69,7 +69,7 @@ jobs:
       - name: 'Azure Load Testing'
         uses: azure/load-testing@v1
         with:
-          loadTestConfigFile: 'LoadTest\config.yaml'
+          loadTestConfigFile: '/LoadTest/config.yaml'
           loadTestResource: lt-demo-app
           resourceGroup: rg-load-test-demo
       - name: Test Summary
